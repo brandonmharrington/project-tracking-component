@@ -65,7 +65,7 @@ h4 {
 .nav {
   display: none;
   position: absolute;
-  top: 8rem;
+  top: 7rem;
   width: 85%;
   left: 7.5%;
   padding: 20px 0;
@@ -89,6 +89,10 @@ h4 {
   margin-bottom: 15px;
 }
 
+.nav li:last-child {
+  margin-bottom: 0;
+}
+
 .nav li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -100,6 +104,7 @@ h4 {
 
 .nav li a:hover {
   color: var(--dark-grayish-blue);
+  text-decoration: underline;
 }
 
 .nav__items-divider {
@@ -169,6 +174,10 @@ h4 {
   font-size: 16px;
 }
 
+.main__info-text {
+  min-width: 200px;
+}
+
 .main__info-text h1 {
   color: var(--very-dark-blue);
   letter-spacing: 1px;
@@ -178,9 +187,10 @@ h4 {
 }
 
 .main__info-text p {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: var(--dark-grayish-blue);
   font-size: 20px;
+  max-width: 250px;
 }
 
 .main__info-actions {
@@ -191,7 +201,7 @@ h4 {
 .main__info-actions button {
   background: var(--red);
   color: white;
-  padding: 12px 25px;
+  padding: 12px 0;
   border: none;
   outline: none;
   cursor: pointer;
@@ -201,6 +211,7 @@ h4 {
   font-family: 'Barlow Condensed', sans-serif;
   margin-right: 20px;
   text-transform: uppercase;
+  min-width: 160px;
 }
 
 .main__info-actions button:hover {
@@ -214,6 +225,7 @@ h4 {
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Barlow Condensed', sans-serif;
+  min-width: 150px;
 }
 
 /*********************************
@@ -258,7 +270,11 @@ h4 {
   }
 
   .nav li {
-    margin-right: 25px;
+    margin-left: 40px;
+  }
+
+  .nav li:last-child {
+    margin-bottom: 15px;
   }
 
   .nav__items-divider {
@@ -280,5 +296,18 @@ h4 {
   .main__image img {
     width: initial;
     max-width: initial;
+  }
+
+  .main__info-text {
+    margin-bottom: 50px;
+  }
+
+  .main__info-text p {
+    font-size: 18px;
+    max-width: 70%;
+  }
+
+  .main__info-actions button {
+    font-weight: bold;
   }
 }
